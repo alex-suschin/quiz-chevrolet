@@ -6,14 +6,14 @@ html {
 }
 
 body {
-    font-family: 'SKODANext', sans-serif;
+    font-family: 'Louis', sans-serif;
     font-size: 20px;
     line-height: 1;
     font-weight: 400;
     color: #000;
     position: relative;
     height: 100%;
-    background: #FAFAFA;
+    background: #F8F8F8;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -155,7 +155,7 @@ select {
 header {
     opacity: 0;
     transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
-    padding: 32px 0 32px 0;
+    padding: 20px 0 20px 0;
     background: #FFFFFF;
     .container {
         display: flex;
@@ -179,9 +179,6 @@ header.header-show {
     align-items: center;
     margin-right: 64px;
     img {
-        max-width: 143px;
-        width: 100%;
-        height: 31px;
         margin-right: 29px;
     }
 }
@@ -225,7 +222,7 @@ header.header-show {
         font-size: 13px;
         line-height: 135%;
         text-align: right;
-        color: #4BA82E;
+        color: #000;
     }
 }
 
@@ -283,7 +280,7 @@ header.header-show {
     flex-shrink: 0;
     position: relative;
     margin-right: 17px;
-    background: #4BA82E;
+    background: $color;
     width: 62px;
     height: 62px;
     border-radius: 50%;
@@ -305,11 +302,9 @@ header.header-show {
 }
 
 .exs-item__text {
-    font-weight: bold;
     font-size: 14px;
-    line-height: 120%;
-    text-transform: uppercase;
-    color: #494949;
+    line-height: 140%;
+    color: #000;
 }
 
 .message-box {
@@ -317,7 +312,7 @@ header.header-show {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    padding: 55px 52px 87px 52px;
+    padding: 55px 134px 87px 52px;
     background: #FFFFFF;
     box-shadow: 0px 33px 50px rgba(0, 0, 0, 0.01);
     border-radius: 28px;
@@ -376,7 +371,7 @@ header.header-show {
         display: block;
         width: 9px;
         height: 9px;
-        background: #4C9F45;
+        background: #61E438;
         position: absolute;
         bottom: 4px;
         right: 7px;
@@ -414,15 +409,17 @@ header.header-show {
     padding: 18px 25px 18px 25px;
     font-weight: normal;
     font-size: 14px;
-    line-height: 160%;
+    line-height: 100%;
     color: #000000;
     text-align: left;
     background: #FFFFFF;
+    color: #000;
     box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.05);
     border-radius: 0px 16px 16px 16px;
 }
 
 .cars {
+    width: 100%;
     padding: 15px 0 0 79px;
     display: flex;
     display: none;
@@ -442,11 +439,11 @@ header.header-show {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-right: 106px;
-    height: 190px;
+    margin-right: 103px;
+    height: 199px;
     margin-bottom: 45px;
     padding: 20px 20px 18px 20px;
-    max-width: 158px;
+    max-width: 160px;
     width: 100%;
     box-shadow: 0px 12px 31px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -462,7 +459,7 @@ header.header-show {
     }
     &:hover,
     &.active {
-        background: #4BA82E;
+        background: $color;
         box-shadow: 0px 14px 34px rgba(76, 159, 69, 0.35);
     }
 }
@@ -478,22 +475,17 @@ header.header-show {
 .car-item__title {
     @include tr2;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-    color: #494949;
+    color: #000;
     margin-bottom: 10px;
 }
 
-.car-item:hover .car-item__title,
-.car-item.active .car-item__title {
-    color: #fff;
-}
-
 .car-item__img {
-    min-width: 260px;
-    max-width: 230px;
+    min-width: 220px;
+    max-width: 220px;
     min-height: 126px;
     width: max-content;
     position: absolute;
@@ -520,16 +512,10 @@ header.header-show {
     color: #494949;
 }
 
-.car-item:hover .car-item__price,
-.car-item.active .car-item__price {
-    color: #fff;
-}
-
 .message-y {
     align-self: flex-end;
     .message-text {
-        color: #fff;
-        background: #4BA82E;
+        background: $color;
         box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.04);
         border-radius: 10px 0px 10px 10px;
         -webkit-border-radius: 10px 0px 10px 10px;
@@ -565,14 +551,14 @@ header.header-show {
         font-size: 14px;
         line-height: 100%;
         text-align: center;
-        color: #494949;
+        color: #000;
         &:first-child {
             margin-right: 16px;
         }
         &:hover,
         &.active {
-            background: #4BA82E;
-            color: #fff;
+            background: $color;
+            color: #000;
         }
     }
 }
@@ -594,12 +580,12 @@ header.header-show {
 }
 
 .agree {
-    margin-top: 18px;
+    margin-top: 15px;
     font-weight: normal;
     font-size: 12px;
     line-height: 100%;
     color: #747474;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     a {
         font-weight: normal;
         font-size: 12px;
@@ -617,8 +603,8 @@ header.header-show {
     max-width: 254px;
     width: 100%;
     margin-top: 20px;
-    background: #4BA82E;
-    color: #fff;
+    background: $color;
+    color: #000;
     font-family: inherit;
     font-size: 17px;
     border-radius: 16px;
@@ -641,6 +627,10 @@ header.header-show {
 
 .info-mobile {
     display: none;
+}
+
+.message-m .message-text {
+    line-height: 160%;
 }
 
 
@@ -815,11 +805,6 @@ header.header-show {
     }
     header {
         padding: 20px 0;
-    }
-    .logo img {
-        width: 156px;
-        height: 34px;
-        margin-right: 12px;
     }
     .exs-item {
         width: 100%;
