@@ -518,7 +518,9 @@ header.header-show {
   .car-item:hover, .car-item.active {
     background: #F1B923;
     -webkit-box-shadow: 0px 12px 21px rgba(241, 185, 35, 0.16);
-            box-shadow: 0px 12px 21px rgba(241, 185, 35, 0.16); }
+            box-shadow: 0px 12px 21px rgba(241, 185, 35, 0.16);
+    -webkit-box-shadow: 0px 14px 34px rgba(76, 159, 69, 0.35);
+            box-shadow: 0px 14px 34px rgba(76, 159, 69, 0.35); }
 
 .car-item:nth-child(3n) {
   margin-right: 0; }
